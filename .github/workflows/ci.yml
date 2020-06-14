@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-node@v1
         with: 
           node-version: "12.x"
+      - run: npm install --save-dev --save-exact prettier
+      - run: npm install --global surge
       - run: npm ci
         working-directory: ${{env.working-dir}}
       - run: npm run format:check
