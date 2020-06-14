@@ -1,7 +1,7 @@
 version: "3"
 services:
   nodejs:
-    image: node:12.16.3
+    build: ./docker
     working_dir: /root/app
     environment:
       - NODE_ENV=production
