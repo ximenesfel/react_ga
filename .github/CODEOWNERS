@@ -1,4 +1,4 @@
-* @ximenesfel
-*.js @ximenesfel
-*.yml @ximenesfel
-/public/ @ximenesfel
+*  @ximenesfel
+*.js  @ximenesfel
+*.yml  @ximenesfel
+/public/  @ximenesfel
