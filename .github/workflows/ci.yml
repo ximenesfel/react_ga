@@ -17,7 +17,9 @@ jobs:
         with: 
           node-version: "12.x"
       - run: npm ci
+        working-directory: ${{env.working-dir}}
       - run: npm run format:check
+        working-directory: ${{env.working-dir}}
       - run: npm test -- --coverage
         env:
           CI: true
